@@ -25,6 +25,7 @@ const App = () => {
         <Route path="/progress" element={<Layout><Progress /></Layout>} />
         <Route path="/employees" element={<Layout><Employees /></Layout>} />
         <Route path="/authorized-emails" element={<Layout><AuthorizedEmails /></Layout>} />
+        <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
     </ErrorBoundary>
   );
